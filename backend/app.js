@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000
 const mongoURI = process.env.MONGO_URI
 
 app.use(cors({
-  origin: 'https://last-mern-update.vercel.app', // Разрешенный источник
+  origin: "*", // Разрешить все источники
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Если используются cookies или авторизация
 }));
